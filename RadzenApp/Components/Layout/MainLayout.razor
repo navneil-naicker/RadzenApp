@@ -1,0 +1,61 @@
+﻿@inherits LayoutComponentBase
+<RadzenComponents />
+
+<RadzenRow Gap="2rem">
+    <RadzenColumn Size="3" id="sidebar">
+        <div class="app-name">Radzen App</div>
+        <ul class="side-nav">
+            <li>
+                <a href="dashboard.html">
+                    <RadzenIcon Icon="dashboard" />
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="user.html">
+                    <RadzenIcon Icon="dashboard" />
+                    <span>User Profile</span>
+                </a>
+            </li>
+            <li>
+                <a href="table.html">
+                    <RadzenIcon Icon="dashboard" />
+                    <span>Table List</span>
+                </a>
+            </li>
+            <li>
+                <a href="typography.html">
+                    <RadzenIcon Icon="dashboard" />
+                    <span>Typography</span>
+                </a>
+            </li>
+            <li>
+                <a href="icons.html">
+                    <RadzenIcon Icon="dashboard" />
+                    <span>Icons</span>
+                </a>
+            </li>
+            <li>
+                <a href="maps.html">
+                    <RadzenIcon Icon="dashboard" />
+                    <span>Maps</span>
+                </a>
+            </li>
+            <li class="active">
+                <a href="notifications.html">
+                    <RadzenIcon Icon="dashboard" />
+                    <span>Notifications</span>
+                </a>
+            </li>
+        </ul>
+    </RadzenColumn>
+    <RadzenColumn id="pagelet">
+        @Body
+    </RadzenColumn>
+</RadzenRow>
+
+<div id="blazor-error-ui">
+    An unhandled error has occurred.
+    <a href="" class="reload">Reload</a>
+    <a class="dismiss">🗙</a>
+</div>
